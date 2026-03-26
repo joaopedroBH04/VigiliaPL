@@ -1,0 +1,130 @@
+# =============================================================================
+# VigiliaPL - Taxonomia de Palavras-Chave
+# Gerenciado pelo time de Relacoes Institucionais da Abrasel
+# =============================================================================
+
+primarias:
+  estabelecimentos:
+    - bar
+    - restaurante
+    - lanchonete
+    - botequim
+    - churrascaria
+    - pizzaria
+    - padaria
+    - cafeteria
+    - fast food
+    - delivery
+    - food truck
+    - dark kitchen
+    - ghost kitchen
+
+  setor_segmento:
+    - alimentacao fora do lar
+    - food service
+    - servico de alimentacao
+    - refeicao comercial
+    - gastronomia
+    - hospitalidade alimentar
+
+  entidades:
+    - abrasel
+    - abia
+    - aberc
+    - sindicato de bares
+    - sindicato de restaurantes
+
+  tributacao_especifica:
+    - simples nacional
+    - issqn sobre alimentacao
+    - mei alimentacao
+    - nota fiscal eletronica
+    - nfc-e
+
+  trabalhistas_setor:
+    - garcom
+    - garconete
+    - cozinheiro
+    - auxiliar de cozinha
+    - chapeiro
+    - barista
+    - sommelier
+
+secundarias:
+  tributacao_geral:
+    - icms sobre insumos
+    - pis/cofins
+    - reforma tributaria
+    - iva
+    - cbs
+    - ibs
+    - split payment
+
+  trabalhista_geral:
+    - jornada de trabalho
+    - hora extra
+    - plr
+    - ponto eletronico
+    - escala 6x1
+    - banco de horas
+
+  sanitario_regulatorio:
+    - anvisa
+    - vigilancia sanitaria
+    - alvara sanitario
+    - inspecao de alimentos
+    - boas praticas de fabricacao
+
+  ambiental:
+    - residuo solido
+    - embalagem descartavel
+    - canudo plastico
+    - sacola plastica
+    - coleta seletiva
+
+  alcool_bebidas:
+    - lei seca
+    - bebida alcoolica
+    - cerveja artesanal
+    - vinho
+    - cachaca
+    - regulamentacao de bebidas
+
+  infraestrutura_urbana:
+    - alvara de funcionamento
+    - licenca de operacao
+    - zoneamento comercial
+    - acessibilidade
+
+  turismo:
+    - turismo gastronomico
+    - turismo de eventos
+    - embratur
+    - ministerio do turismo
+
+temas_camara:
+  40: "Industria, Comercio e Servicos"
+  46: "Trabalho e Emprego"
+  47: "Tributacao e Orcamento"
+  38: "Saude"
+  49: "Turismo"
+  44: "Meio Ambiente e Desenvolvimento Sustentavel"
+  30: "Direito do Consumidor"
+  48: "Urbanismo e Desenvolvimento Urbano"
+
+exclusao:
+  - alimentacao escolar
+  - merenda
+  - alimentacao hospitalar
+  - banco de alimentos
+  - cesta basica
+  - agricultura familiar
+
+scoring:
+  peso_primaria: 3
+  peso_secundaria: 1
+  peso_tema: 2
+  peso_autor_aliado: 2
+  limiar_alta: 5
+  limiar_media: 3
+  limiar_baixa: 1

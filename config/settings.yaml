@@ -1,0 +1,41 @@
+# =============================================================================
+# VigiliaPL - Configuracoes de Execucao
+# =============================================================================
+
+coleta:
+  # Janela de busca incremental em dias (proposicoes desde X dias atras)
+  janela_incremental_dias: 1
+  # Itens por pagina na API da Camara
+  itens_por_pagina: 100
+  # Maximo de paginas por execucao incremental (evita sobrecarregar)
+  max_paginas: 5
+  # Delay entre requests (segundos) - respeita rate limiting das APIs
+  rate_limit_delay: 0.8
+  # Tipos de proposicao monitorados (vazio = todos)
+  tipos_monitorados:
+    - PL
+    - PEC
+    - PLP
+    - PDC
+    - MPV
+
+alertas:
+  # Nivel minimo para disparar alerta
+  nivel_minimo_alerta: Alta
+  # Canais ativos: LOG, EMAIL, SLACK (beta usa apenas LOG)
+  canais_ativos:
+    - LOG
+  # Arquivo de saida dos alertas
+  arquivo_alertas: logs/alertas.txt
+
+banco:
+  # Caminho do banco SQLite local
+  caminho_db: data/vigilia.db
+
+logging:
+  # Nivel: DEBUG, INFO, WARNING, ERROR
+  nivel: INFO
+  # Arquivo de log da execucao
+  arquivo_log: logs/execucao.log
+  # Manter logs dos ultimos N dias
+  retencao_dias: 30
